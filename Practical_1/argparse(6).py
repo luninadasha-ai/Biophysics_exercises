@@ -89,31 +89,3 @@ for at1, at2 in contacts:
           f"{res_1.get_resname()} {res_1.id[1]}  <-->  "
           f"{res_2.get_resname()} {res_2.id[1]}")
     ncontact += 1
-
-"""
-Example usage
-python 'argparse(6).py' 1ubq.pdb
-Since there are no cysteine residues in 1ubq.pdb file, the result is:
-Settings
---------
-distance  : 2.0
-PDB_file  : 1ubq.pdb
-
-Settings, again
----------------
-2.0 1ubq.pdb
-No cysteine SG atoms found in this structure — no disulphide bonds possible.
-
-We can also try an option where the user chooses the distance:
-python 'argparse(6).py' 1ubq.pdb -d 2.2
-
-Settings
---------
-distance  : 2.2
-PDB_file  : 1ubq.pdb
-
-Settings, again
----------------
-2.2 1ubq.pdb
-No cysteine SG atoms found in this structure — no disulphide bonds possible.
-"""
